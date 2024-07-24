@@ -6,6 +6,31 @@ const close = document.querySelector(".close");
 const container = document.querySelector(".header__container");
 const social = document.querySelector(".social");
 const body = document.querySelector("body");
+const linkAbout = document.querySelector("#about");
+const linkExperience = document.querySelector("#experience");
+const linkSkills = document.querySelector("#skills");
+const linkProjects = document.querySelector("#projects");
+
+linkAbout.addEventListener("click", function () {
+  show();
+});
+function show() {
+  modal.classList.remove("open");
+}
+
+linkExperience.addEventListener("click", function () {
+  show();
+});
+
+linkSkills.addEventListener("click", function () {
+  show();
+});
+linkProjects.addEventListener("click", function () {
+  show();
+});
+
+
+
 
 btn.addEventListener("click", function () {
   openModal();
@@ -17,11 +42,9 @@ function openModal() {
 }
 
 close.addEventListener("click", function () {
-  closeModalCross()
-  enableScroll()
+  closeModalCross();
+  enableScroll();
 });
-
-
 
 function closeModalCross() {
   modal.classList.remove("open");
@@ -129,13 +152,10 @@ const nthFibo = (n) => {
   if (n == 2) return 1;
 
   for (let i = 3; i <= n; i += 1) {
-   sum = n1 + n2;
-   n1 = n2
-   n2 = sum;
+    sum = n1 + n2;
+    n1 = n2;
+    n2 = sum;
   }
- 
-  return sum;
- 
- };
 
- 
+  return sum;
+};

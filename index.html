@@ -22,31 +22,30 @@
               <img src="./img/Close.svg" alt="close" />
             </button>
             <ul class="nav-list">
-              <li class="nav-list__item">
-                <span class="nav-list__item-link">ПРО МЕНЯ</span>
+              <li id="about" class="nav-list__item">
+                <a
+                  href="http://127.0.0.1:5500/index.html#about"
+                  class="nav-list__item-link"
+                  >ПРО МЕНЯ</a
+                >
               </li>
-              <li class="nav-list__item">
-                <span class="nav-list__item-link">МОЙ ОПЫТ</span>
+              <li id="experience" class="nav-list__item">
+                <a class="nav-list__item-link">МОЙ ОПЫТ</a>
               </li>
-              <li class="nav-list__item">
-                <span class="nav-list__item-link">МОИ НАВЫКИ</span>
+              <li id="skills" class="nav-list__item">
+                <a class="nav-list__item-link">МОИ НАВЫКИ</a>
               </li>
-              <li class="nav-list__item">
-                <span class="nav-list__item-link">МОИ РАБОТЫ</span>
+              <li id="projects" class="nav-list__item">
+                <a class="nav-list__item-link">МОИ РАБОТЫ</a>
               </li>
-              <li class="nav-list__item">
-                <span class="nav-list__item-link">ПРАЙС-ЛИСТ</span>
-              </li>
-              <li class="nav-list__item">
-                <span class="nav-list__item-link">ПРО МЕНЯ</span>
-              </li>
+              
             </ul>
             <div class="social__signs center">
               <a href="https://github.com/GurinAOA"
                 ><img src="./img/Github.svg" alt="git"
               /></a>
               <a href="https://www.linkedin.com/in/aksana-huryna-2abb8888/">
-                <img class="linkedin"src="./img/linkedin.svg" alt="linkedin"
+                <img class="linkedin" src="./img/linkedin.svg" alt="linkedin"
               /></a>
               <a
                 href="https://www.instagram.com/oksanakiulo?igsh=MTY1NG8yenJwOTBkZQ%3D%3D&utm_source=qr"
@@ -97,22 +96,39 @@
             <h1 class="about__profession">Я начинающий фронтенд-разработчик</h1>
             <h1 class="about__city">из Минска</h1>
             <div class="header__container__buttons">
-              <button class="header__container__buttons-btn yellow">
-                Портфолио
-              </button>
-              <a href class="header__container__buttons-btn">Про меня</a>
+              <a href="#about" class="header__container__buttons-btn yellow">
+                Расскажу о себе
+              </a>
+              <!-- <a href class="header__container__buttons-btn">Про меня</a> -->
             </div>
           </section>
         </div>
       </div>
     </header>
     <main class="main">
-      <div class="main__container">
+      <div id="about" class="main__container">
         <div class="circle add">About</div>
         <h2 class="main__useful">Обо мне</h2>
         <div class="line-yellow more"></div>
-        <div class="about-text"><span class="about">Я любознательна, целеустремленна, коммуникабельна и трудолюбива. Люблю учиться и развиваться, достигать поставленных задач, работать в команде с единомышленниками. Изучаю с удовольствием английский с репетитором онлайн (уровень B2).<br></span>
-          <span class="about">Благодаря оконченному курсу по Frontend-разработке(js,react) (добросовестно и в срок выполняла все домашние задания, и как результат, достойные проекты в моем репозитории https://github.com/GurinAOA) и постоянному самостоятельному обучению стремлюсь дальше обучаться и много работать для достижения результата- устроиться на работу и работать усердно на благо компании. Владею уверенными знаниями языков HTML и CSS; умею работать с препроцессорами SASS, методологией Бэм,библиотекой Bootstrap, с гитом, язык программирования js+react.</span></div>
+        <div class="about-text">
+          <span class="about"
+            >Я любознательна, целеустремленна, коммуникабельна и трудолюбива.
+            Люблю учиться и развиваться, достигать поставленных задач, работать
+            в команде с единомышленниками. Изучаю с удовольствием английский с
+            репетитором онлайн (уровень B2).<br
+          /></span>
+          <span class="about"
+            >Благодаря оконченному курсу по Frontend-разработке(js,react)
+            (добросовестно и в срок выполняла все домашние задания, и как
+            результат, достойные проекты в моем репозитории
+            https://github.com/GurinAOA) и постоянному самостоятельному обучению
+            стремлюсь дальше обучаться и много работать для достижения
+            результата- устроиться на работу и работать усердно на благо
+            компании. Владею уверенными знаниями языков HTML и CSS; умею
+            работать с препроцессорами SASS, методологией Бэм,библиотекой
+            Bootstrap, с гитом, язык программирования js+react.</span
+          >
+        </div>
         <div class="circle add">Опыт</div>
         <h2 class="main__useful">Чем я буду полезна</h2>
         <div class="line-yellow more"></div>
@@ -220,8 +236,6 @@
         </div>
       </div>
 
-
-
       <div class="main__container">
         <div class="circle add">Навыки</div>
         <h2 class="main__useful">Мои навыки</h2>
@@ -235,8 +249,7 @@
                 <ul>
                   <li class="tree__content-text">
                     <div class="main__content">
-                      <div class="main__content-circle">
-                      </div>
+                      <div class="main__content-circle"></div>
                       <div class="main__content-text">
                         <h3 class="main__content-text-title">
                           Владею уверенными знаниями языков HTML и CSS
@@ -246,23 +259,24 @@
                   </li>
                   <li class="tree__content-text">
                     <div class="main__content">
-                      <div class="main__content-circle">
-                      </div>
+                      <div class="main__content-circle"></div>
                       <div class="main__content-text">
-                        <h3 class="main__content-text-title">Умею работать с препроцессорами SASS</h3>
+                        <h3 class="main__content-text-title">
+                          Умею работать с препроцессорами SASS
+                        </h3>
                       </div>
                     </div>
                   </li>
                   <li class="tree__content-text">
                     <div class="main__content">
-                      <div class="main__content-circle">
-                      </div>
+                      <div class="main__content-circle"></div>
                       <div class="main__content-text">
-                        <h3 class="main__content-text-title">Использую методологию Бэм</h3>
+                        <h3 class="main__content-text-title">
+                          Использую методологию Бэм
+                        </h3>
                       </div>
                     </div>
                   </li>
- 
                 </ul>
               </li>
             </ul>
@@ -271,23 +285,24 @@
             <ul class="tree__content">
               <li class="tree__content-title">
                 Skills
-              <div class="menu-circle"></div>
+                <div class="menu-circle"></div>
+              </li>
+
               <li class="tree__content-title">
-               
                 <ul>
                   <li class="tree__content-text">
                     <div class="main__content">
-                      <div class="main__content-circle">
-                      </div>
+                      <div class="main__content-circle"></div>
                       <div class="main__content-text">
-                        <h3 class="main__content-text-title">Знакома с библиотеками JQuery, Bootstrap</h3>
+                        <h3 class="main__content-text-title">
+                          Знакома с библиотеками JQuery, Bootstrap
+                        </h3>
                       </div>
                     </div>
                   </li>
                   <li class="tree__content-text">
                     <div class="main__content">
-                      <div class="main__content-circle">
-                      </div>
+                      <div class="main__content-circle"></div>
                       <div class="main__content-text">
                         <h3 class="main__content-text-title">Использую Git</h3>
                       </div>
@@ -295,10 +310,11 @@
                   </li>
                   <li class="tree__content-text">
                     <div class="main__content">
-                      <div class="main__content-circle">
-                      </div>
+                      <div class="main__content-circle"></div>
                       <div class="main__content-text">
-                        <h3 class="main__content-text-title">язык программирования JavaScript, фреймворк React</h3>
+                        <h3 class="main__content-text-title">
+                          язык программирования JavaScript, фреймворк React
+                        </h3>
                       </div>
                     </div>
                   </li>
@@ -307,10 +323,57 @@
             </ul>
           </div>
         </div>
+
+        <div class="circle add">Работы</div>
+        <h2 class="main__useful">Мои работы</h2>
+        <div class="wrapper__img">
+          <div class="wrapper__img-item">
+            <a
+              class="link-projects"
+              href="https://gurinaoa.github.io/gambling-project/"
+              >Gambling project</a
+            >
+            <img class="portfolio-img" src="./img/project.png" alt="project" />
+          </div>
+          <div class="wrapper__img-item">
+            <a
+              class="link-projects"
+              href="https://gurinaoa.github.io/cookies_angular/"
+              >Cookies angular project</a
+            >
+            <img
+              class="portfolio-img"
+              src="./img/project_2.png"
+              alt="project"
+            />
+          </div>
+          <div class="wrapper__img-item">
+            <a
+              class="link-projects"
+              href="https://gurinaoa.github.io/Food-page_js/"
+              >Food-page project</a
+            >
+            <img
+              class="portfolio-img"
+              src="./img/project_3.png"
+              alt="project"
+            />
+          </div>
+          <div class="wrapper__img-item">
+            <a class="link-projects" href="https://gurinaoa.github.io/ASUS/"
+              >ASUS project</a
+            >
+            <img
+              class="portfolio-img"
+              src="./img/project_4.png"
+              alt="project"
+            />
+          </div>
+        </div>
+        <a class="link-projects" href="https://github.com/GurinAOA"
+          >Другие проекты</a
+        >
       </div>
-
-
-
     </main>
     <footer class="footer">
       <div class="footer__container">
