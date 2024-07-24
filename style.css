@@ -127,6 +127,11 @@ header {
 .yellow {
   background-color: rgba(0, 0, 255, 0.541);
   cursor: pointer;
+
+}
+.yellow:hover{
+  transform: scale(1.3);
+  transition: all .4s;
 }
 .blue-circle {
   position: absolute;
